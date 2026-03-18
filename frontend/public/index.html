@@ -66,6 +66,33 @@
         height: auto; /* Aumenta o tamanho do SVG */
       }
 
+      .login-enter-button {
+        background-color: #004518 !important;
+        color: #ffffff !important;
+      }
+
+      .login-enter-button:hover {
+        background-color: #005a20 !important;
+      }
+
+      .login-enter-button:active {
+        background-color: #003312 !important;
+      }
+
+      .login-enter-button.Mui-disabled,
+      .login-enter-button:disabled {
+        background-color: #66997d !important;
+        color: #ffffff !important;
+      }
+
+      .login-enter-button:focus,
+      .login-enter-button:focus-visible {
+        background-color: #005a20 !important;
+        outline: 2px solid #005a20 !important;
+        outline-offset: 2px;
+        box-shadow: 0 0 0 2px #ffffff !important;
+      }
+
       .ip__track {
         stroke: #ddd;
       }
@@ -153,6 +180,34 @@
     </div>
     <div id="root"></div>
     <script>
+      (function () {
+        const applyLoginButtonClass = () => {
+          const elements = document.querySelectorAll(
+            "button, [role='button'], input[type='submit']"
+          );
+
+          elements.forEach((element) => {
+            const text =
+              element.tagName === "INPUT"
+                ? element.value || ""
+                : element.textContent || "";
+
+            if (text.trim().toLowerCase() === "entrar") {
+              element.classList.add("login-enter-button");
+            }
+          });
+        };
+
+        if (document.readyState === "loading") {
+          document.addEventListener("DOMContentLoaded", applyLoginButtonClass);
+        } else {
+          applyLoginButtonClass();
+        }
+
+        const observer = new MutationObserver(applyLoginButtonClass);
+        observer.observe(document.body, { childList: true, subtree: true });
+      })();
+
       // Simulate progress update (if needed)
       window.finishProgress = () => {
         setTimeout(() => {
