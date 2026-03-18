@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.DialectSQLite = exports.DialectMariaDB = exports.DialectMSSQL = exports.DialectPostgres = exports.DialectMySQL = void 0;
+var DialectMySQL_1 = require("./DialectMySQL");
+Object.defineProperty(exports, "DialectMySQL", { enumerable: true, get: function () { return DialectMySQL_1.DialectMySQL; } });
+var DialectPostgres_1 = require("./DialectPostgres");
+Object.defineProperty(exports, "DialectPostgres", { enumerable: true, get: function () { return DialectPostgres_1.DialectPostgres; } });
+var DialectMSSQL_1 = require("./DialectMSSQL");
+Object.defineProperty(exports, "DialectMSSQL", { enumerable: true, get: function () { return DialectMSSQL_1.DialectMSSQL; } });
+var DialectMariaDB_1 = require("./DialectMariaDB");
+Object.defineProperty(exports, "DialectMariaDB", { enumerable: true, get: function () { return DialectMariaDB_1.DialectMariaDB; } });
+var DialectSQLite_1 = require("./DialectSQLite");
+Object.defineProperty(exports, "DialectSQLite", { enumerable: true, get: function () { return DialectSQLite_1.DialectSQLite; } });
