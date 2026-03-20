@@ -1,1 +1,42 @@
-const a479_0x35768f=a479_0x176a;(function(_0x15bfac,_0x19d26e){const _0x320ff7=a479_0x176a,_0x251f05=_0x15bfac();while(!![]){try{const _0x3428e8=-parseInt(_0x320ff7(0x180))/0x1+parseInt(_0x320ff7(0x188))/0x2*(parseInt(_0x320ff7(0x18a))/0x3)+-parseInt(_0x320ff7(0x18c))/0x4+-parseInt(_0x320ff7(0x183))/0x5+-parseInt(_0x320ff7(0x17f))/0x6+parseInt(_0x320ff7(0x184))/0x7+parseInt(_0x320ff7(0x18e))/0x8;if(_0x3428e8===_0x19d26e)break;else _0x251f05['push'](_0x251f05['shift']());}catch(_0xc08db){_0x251f05['push'](_0x251f05['shift']());}}}(a479_0x10b3,0x56566));const a479_0x40b488=(function(){let _0x14eb08=!![];return function(_0x25c5f2,_0x307a13){const _0xe41856=_0x14eb08?function(){const _0x1cd8b3=a479_0x176a;if(_0x307a13){const _0x5206f2=_0x307a13[_0x1cd8b3(0x186)](_0x25c5f2,arguments);return _0x307a13=null,_0x5206f2;}}:function(){};return _0x14eb08=![],_0xe41856;};}()),a479_0x2939a6=a479_0x40b488(this,function(){const _0x2a644b=a479_0x176a;return a479_0x2939a6[_0x2a644b(0x17d)]()[_0x2a644b(0x18d)](_0x2a644b(0x181))[_0x2a644b(0x17d)]()[_0x2a644b(0x187)](a479_0x2939a6)[_0x2a644b(0x18d)](_0x2a644b(0x181));});a479_0x2939a6();'use strict';var __importDefault=this&&this['__importDefault']||function(_0xda5985){const _0x24c48b=a479_0x176a;return _0xda5985&&_0xda5985[_0x24c48b(0x18b)]?_0xda5985:{'default':_0xda5985};};function a479_0x176a(_0x15f353,_0x2850c6){const _0x22084b=a479_0x10b3();return a479_0x176a=function(_0x2939a6,_0x40b488){_0x2939a6=_0x2939a6-0x17d;let _0x10b33a=_0x22084b[_0x2939a6];return _0x10b33a;},a479_0x176a(_0x15f353,_0x2850c6);}function a479_0x10b3(){const _0x99ef10=['8738808TYxbCy','refreshSecret','defineProperty','toString','default','219732jDqeuI','161839oFIsMt','(((.+)+)+)+$','jsonwebtoken','2321800aDqztN','452403XylNXu','../UserServices/ShowUserService','apply','constructor','102esxmde','verify','7551nvMGsO','__esModule','1075552AMMePe','search'];a479_0x10b3=function(){return _0x99ef10;};return a479_0x10b3();}Object[a479_0x35768f(0x190)](exports,a479_0x35768f(0x18b),{'value':!![]}),exports[a479_0x35768f(0x17e)]=FindUserFromToken;const jsonwebtoken_1=require(a479_0x35768f(0x182)),ShowUserService_1=__importDefault(require(a479_0x35768f(0x185))),auth_1=__importDefault(require('../../config/auth'));async function FindUserFromToken(_0x1fbc3d){const _0x42afab=a479_0x35768f,_0x1d1fef=(0x0,jsonwebtoken_1[_0x42afab(0x189)])(_0x1fbc3d,auth_1[_0x42afab(0x17e)][_0x42afab(0x18f)]),{id:_0x47772b}=_0x1d1fef,_0x715fa2=await(0x0,ShowUserService_1[_0x42afab(0x17e)])(_0x47772b);return _0x715fa2;}
+'use strict';
+Object.defineProperty(exports,'__esModule',{'value':true});
+exports.default=FindUserFromToken;
+const jsonwebtoken_1=require('jsonwebtoken');
+const ShowUserService_1=require('../UserServices/ShowUserService');
+const auth_1=require('../../config/auth');
+const AppError_1=require('../../errors/AppError');
+function normalizeToken(value){
+  if(typeof value!=='string')return undefined;
+  const raw=value.trim();
+  if(!raw)return undefined;
+  if(/^Bearer\s+/i.test(raw)){
+    const token=raw.replace(/^Bearer\s+/i,'').trim();
+    return token||undefined;
+  }
+  return raw;
+}
+function decodeToken(token){
+  const {secret,refreshSecret}=auth_1.default;
+  try{
+    return (0,jsonwebtoken_1.verify)(token,refreshSecret);
+  }catch(_error){
+    return (0,jsonwebtoken_1.verify)(token,secret);
+  }
+}
+async function FindUserFromToken(tokenInput){
+  const token=normalizeToken(tokenInput);
+  if(!token){
+    throw new AppError_1.default('ERR_SESSION_EXPIRED',401);
+  }
+  try{
+    const decoded=decodeToken(token);
+    const {id}=decoded;
+    if(!id){
+      throw new AppError_1.default('ERR_SESSION_EXPIRED',401);
+    }
+    const user=await (0,ShowUserService_1.default)(id);
+    return user;
+  }catch(_error){
+    throw new AppError_1.default('ERR_SESSION_EXPIRED',401);
+  }
+}

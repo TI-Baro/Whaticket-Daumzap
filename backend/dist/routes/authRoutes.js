@@ -1,1 +1,38 @@
-'use strict';var a429_0x4d4928=a429_0x3062;(function(_0x54b5d3,_0x1b5625){var _0x2f5a36=a429_0x3062,_0x14d4ae=_0x54b5d3();while(!![]){try{var _0x24a94a=-parseInt(_0x2f5a36(0x1bf))/0x1*(parseInt(_0x2f5a36(0x1c5))/0x2)+-parseInt(_0x2f5a36(0x1b7))/0x3+parseInt(_0x2f5a36(0x1be))/0x4+parseInt(_0x2f5a36(0x1b9))/0x5+-parseInt(_0x2f5a36(0x1ba))/0x6*(-parseInt(_0x2f5a36(0x1c2))/0x7)+parseInt(_0x2f5a36(0x1ae))/0x8+parseInt(_0x2f5a36(0x1c1))/0x9*(parseInt(_0x2f5a36(0x1ca))/0xa);if(_0x24a94a===_0x1b5625)break;else _0x14d4ae['push'](_0x14d4ae['shift']());}catch(_0x2fe660){_0x14d4ae['push'](_0x14d4ae['shift']());}}}(a429_0x411b,0x2133c));function a429_0x411b(){var _0x4280f0=['4630YIOAoC','prototype','__createBinding','/me','toString','__importStar','__esModule','getOwnPropertyDescriptor','hasOwnProperty','../middleware/isAdmin','1740288fqYfDi','create','/login','__setModuleDefault','writable','getOwnPropertyNames','/impersonate/:companyId','default','../controllers/SessionController','707265pPnnYY','impersonate','738810fUQQJX','6vfmaYi','Router','update','/logout','380044BsKFTR','239501aWyCpt','get','2295bJHGiq','230146unHMaD','search','post','2mmgfaH','defineProperty','configurable','apply','delete'];a429_0x411b=function(){return _0x4280f0;};return a429_0x411b();}var __createBinding=this&&this[a429_0x4d4928(0x1cc)]||(Object['create']?function(_0x131369,_0x49099c,_0x5c7cd0,_0x1dec2b){var _0x5e02f4=a429_0x4d4928;if(_0x1dec2b===undefined)_0x1dec2b=_0x5c7cd0;var _0x2a51ab=Object[_0x5e02f4(0x1d1)](_0x49099c,_0x5c7cd0);(!_0x2a51ab||('get'in _0x2a51ab?!_0x49099c[_0x5e02f4(0x1d0)]:_0x2a51ab[_0x5e02f4(0x1b2)]||_0x2a51ab[_0x5e02f4(0x1c7)]))&&(_0x2a51ab={'enumerable':!![],'get':function(){return _0x49099c[_0x5c7cd0];}}),Object[_0x5e02f4(0x1c6)](_0x131369,_0x1dec2b,_0x2a51ab);}:function(_0x54b66e,_0x41aa82,_0x1e5143,_0x318996){if(_0x318996===undefined)_0x318996=_0x1e5143;_0x54b66e[_0x318996]=_0x41aa82[_0x1e5143];}),__setModuleDefault=this&&this[a429_0x4d4928(0x1b1)]||(Object[a429_0x4d4928(0x1af)]?function(_0x3f0a3a,_0x5791c3){var _0x277d2a=a429_0x4d4928;Object['defineProperty'](_0x3f0a3a,_0x277d2a(0x1b5),{'enumerable':!![],'value':_0x5791c3});}:function(_0x12ef71,_0x359a43){var _0x54540d=a429_0x4d4928;_0x12ef71[_0x54540d(0x1b5)]=_0x359a43;}),__importStar=this&&this[a429_0x4d4928(0x1cf)]||(function(){var _0x1e44f7=(function(){var _0x3c6afc=!![];return function(_0x4b28b2,_0x2a1029){var _0x390385=_0x3c6afc?function(){var _0x2b0d5f=a429_0x3062;if(_0x2a1029){var _0x1f5ace=_0x2a1029[_0x2b0d5f(0x1c8)](_0x4b28b2,arguments);return _0x2a1029=null,_0x1f5ace;}}:function(){};return _0x3c6afc=![],_0x390385;};}()),_0x268ad2=_0x1e44f7(this,function(){var _0x2bb33=a429_0x3062;return _0x268ad2[_0x2bb33(0x1ce)]()[_0x2bb33(0x1c3)]('(((.+)+)+)+$')['toString']()['constructor'](_0x268ad2)[_0x2bb33(0x1c3)]('(((.+)+)+)+$');});_0x268ad2();var _0x49ba03=function(_0x5eb9bb){var _0x31ea76=a429_0x3062;return _0x49ba03=Object[_0x31ea76(0x1b3)]||function(_0x29d611){var _0x254725=_0x31ea76,_0x419842=[];for(var _0x40a503 in _0x29d611)if(Object[_0x254725(0x1cb)][_0x254725(0x1ac)]['call'](_0x29d611,_0x40a503))_0x419842[_0x419842['length']]=_0x40a503;return _0x419842;},_0x49ba03(_0x5eb9bb);};return function(_0xe3d875){var _0x43cf11=a429_0x3062;if(_0xe3d875&&_0xe3d875[_0x43cf11(0x1d0)])return _0xe3d875;var _0xe6cb18={};if(_0xe3d875!=null){for(var _0x2b46ff=_0x49ba03(_0xe3d875),_0x3ff098=0x0;_0x3ff098<_0x2b46ff['length'];_0x3ff098++)if(_0x2b46ff[_0x3ff098]!==_0x43cf11(0x1b5))__createBinding(_0xe6cb18,_0xe3d875,_0x2b46ff[_0x3ff098]);}return __setModuleDefault(_0xe6cb18,_0xe3d875),_0xe6cb18;};}()),__importDefault=this&&this['__importDefault']||function(_0x4c0a18){var _0x3e340a=a429_0x4d4928;return _0x4c0a18&&_0x4c0a18[_0x3e340a(0x1d0)]?_0x4c0a18:{'default':_0x4c0a18};};function a429_0x3062(_0x2fa375,_0x3d343c){var _0x204f39=a429_0x411b();return a429_0x3062=function(_0x1a3abc,_0x8207a5){_0x1a3abc=_0x1a3abc-0x1ac;var _0x411b88=_0x204f39[_0x1a3abc];return _0x411b88;},a429_0x3062(_0x2fa375,_0x3d343c);}Object[a429_0x4d4928(0x1c6)](exports,'__esModule',{'value':!![]});const express_1=require('express'),SessionController=__importStar(require(a429_0x4d4928(0x1b6))),isAuth_1=__importDefault(require('../middleware/isAuth')),isAdmin_1=__importDefault(require(a429_0x4d4928(0x1ad))),authRoutes=(0x0,express_1[a429_0x4d4928(0x1bb)])();authRoutes[a429_0x4d4928(0x1c4)](a429_0x4d4928(0x1b0),SessionController['store']),authRoutes[a429_0x4d4928(0x1c0)](a429_0x4d4928(0x1b4),isAuth_1['default'],isAdmin_1[a429_0x4d4928(0x1b5)],SessionController[a429_0x4d4928(0x1b8)]),authRoutes[a429_0x4d4928(0x1c4)]('/refresh_token',SessionController[a429_0x4d4928(0x1bc)]),authRoutes[a429_0x4d4928(0x1c9)](a429_0x4d4928(0x1bd),isAuth_1['default'],SessionController['remove']),authRoutes['get'](a429_0x4d4928(0x1cd),isAuth_1[a429_0x4d4928(0x1b5)],SessionController['me']),exports[a429_0x4d4928(0x1b5)]=authRoutes;
+'use strict';
+Object.defineProperty(exports,'__esModule',{'value':true});
+const express_1=require('express');
+const SessionController=require('../controllers/SessionController');
+const isAuth_1=require('../middleware/isAuth');
+const isAdmin_1=require('../middleware/isAdmin');
+const AppError_1=require('../errors/AppError');
+const isAuth=isAuth_1.default||isAuth_1;
+const isAdmin=isAdmin_1.default||isAdmin_1;
+const AppError=AppError_1.default||AppError_1;
+const authRoutes=(0,express_1.Router)();
+const normalizeToken=value=>{
+  if(typeof value!=='string')return undefined;
+  const raw=value.trim();
+  if(!raw)return undefined;
+  if(/^Bearer\s+/i.test(raw)){
+    const token=raw.replace(/^Bearer\s+/i,'').trim();
+    return token||undefined;
+  }
+  return raw;
+};
+const prepareMeToken=(req,_res,next)=>{
+  const headerToken=normalizeToken(req.headers?.authorization||req.headers?.Authorization);
+  const cookieToken=normalizeToken(req.cookies?.jrt);
+  const token=headerToken||cookieToken;
+  if(!token){
+    throw new AppError('ERR_SESSION_EXPIRED',401);
+  }
+  req.cookies=req.cookies||{};
+  req.cookies.jrt=token;
+  return next();
+};
+authRoutes.post('/login',SessionController.store);
+authRoutes.post('/impersonate/:companyId',isAuth,isAdmin,SessionController.impersonate);
+authRoutes.post('/refresh_token',SessionController.update);
+authRoutes.delete('/logout',isAuth,SessionController.remove);
+authRoutes.get('/me',isAuth,prepareMeToken,SessionController.me);
+exports.default=authRoutes;
