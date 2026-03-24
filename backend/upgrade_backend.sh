@@ -1,5 +1,9 @@
 #!/bin/sh
 
+# Auto-update desabilitado
+echo "Auto-atualização desabilitada."
+exit 0
+
 # Lê a variável de ambiente do arquivo .env
 NODE_ENV=$(grep NODE_ENV .env | cut -d '=' -f2)
 
