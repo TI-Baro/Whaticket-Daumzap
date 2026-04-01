@@ -1,5 +1,9 @@
 #!/bin/sh
 
+# Auto-update desabilitado
+echo "Auto-atualização desabilitada."
+exit 0
+
 # Lê as variáveis de ambiente do arquivo .env
 REACT_APP_BACKEND_URL=$(grep REACT_APP_BACKEND_URL .env | cut -d '=' -f2)
 NODE_ENV=$(grep NODE_ENV .env | cut -d '=' -f2)
