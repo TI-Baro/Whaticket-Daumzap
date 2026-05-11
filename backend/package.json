@@ -7,7 +7,8 @@
     "watch": "tsc -w",
     "start": "nodemon --exec \"node --max-old-space-size=8192 dist/server.js\"",
     "db:migrate": "npx sequelize db:migrate",
-    "db:seed": "sequelize db:seed:all"
+    "db:seed": "sequelize db:seed:all",
+    "test": "jest --testPathPattern='__tests__' --testEnvironment=node"
   },
   "author": "",
   "license": "MIT",
